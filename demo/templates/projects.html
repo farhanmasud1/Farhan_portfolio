@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block 'main' %}
+{% block 'title' %}Projects{% endblock %}
+
+    <main class="container page-header">
+        <h2 class="section-title">
+            <span class="text-accent-light">RECENT</span> <span class="text-accent">WORK.</span>
+        </h2>
+        <p style="font-size: 1.2rem; max-width: 600px;">A selection of web applications and side projects I've built recently, focusing on clean architecture and UX.</p>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div style="height: 200px; background-color: #f8fafc; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--accent-light); background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4);"></div>
+                    <i class="fas fa-chart-line" style="position: relative; z-index: 1; color: white;"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                        <span>Django</span>
+                        <span>DRF</span>
+                        <span>TailwindCSS</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.3rem;">Analytics Platform</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">A high-performance analytics dashboard built with Django REST Framework and a responsive TailwindCSS frontend.</p>
+                    <div style="margin-top: auto; display: flex; gap: 1rem;">
+                        <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div style="height: 200px; background-color: #f8fafc; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--accent-light); background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4);"></div>
+                    <i class="fas fa-server" style="position: relative; z-index: 1; color: white;"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.3rem;">Inventory Management API</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">A lightning-fast asynchronous API for inventory tracking built with FastAPI and automated with pytest.</p>
+                    <div style="margin-top: auto; display: flex; gap: 1rem;">
+                        <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div style="height: 200px; background-color: #f8fafc; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; font-size: 3rem; color: var(--accent-light); background-image: url('https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'); background-size: cover; background-position: center; position: relative;">
+                    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.4);"></div>
+                    <i class="fas fa-rocket" style="position: relative; z-index: 1; color: white;"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-tags" style="display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                        <span>Django</span>
+                        <span>JavaScript</span>
+                        <span>TailwindCSS</span>
+                    </div>
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.3rem;">Social Interaction Tool</h3>
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">A real-time social platform utilizing Django Channels for WebSockets and TailwindCSS for a modern, sleek UI.</p>
+                    <div style="margin-top: auto; display: flex; gap: 1rem;">
+                        <a href="#" class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="fab fa-github"></i> Code</a>
+                        <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

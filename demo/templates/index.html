@@ -1,0 +1,80 @@
+
+{% extends 'base.html' %}
+{% block 'main' %}
+
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <div class="badge">
+                    <div class="badge-dot"></div>
+                    Available for New Opportunities
+                </div>
+                <h1>
+                    FullStack<br>
+                    <span class="text-accent-light">Web</span><br>
+                    <span class="text-accent">Developer</span>
+                </h1>
+                <p>I'm {{name}}, a Python Developer specializing in building robust backends with Django, DRF, and FastAPI, and crafting sleek interfaces with JavaScript and TailwindCSS.</p>
+                
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="about.html" class="btn btn-outline"><i class="fas fa-user" style="color: var(--text-primary);"></i> About Me</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4>5+</h4>
+                        <p>Years Exp</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>50+</h4>
+                        <p>Projects Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>100%</h4>
+                        <p>Commitment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visuals">
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                    </div>
+                    <div class="code-content">
+                        <span class="code-comment">// Building scalable web applications</span><br>
+                        <span class="code-keyword">const</span> <span class="code-function">developer</span> = {<br>
+                        &nbsp;&nbsp;name: <span class="code-string">'{{name}}'</span>,<br>
+                        &nbsp;&nbsp;passion: <span class="code-string">'Clean Code'</span>,<br>
+                        &nbsp;&nbsp;isAvailable: <span class="code-keyword">true</span><br>
+                        };
+                    </div>
+                </div>
+
+                <div class="floating-card card-1">
+                    <div class="card-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <div class="card-text">
+                        <h5>FullStack Developer</h5>
+                        <p>End-to-end development with modern stacks</p>
+                    </div>
+                </div>
+
+                <div class="floating-card card-2">
+                    <div class="card-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="card-text">
+                        <h5>Python & Frameworks</h5>
+                        <p>Django, DRF, and FastAPI expert</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+{% endblock %}

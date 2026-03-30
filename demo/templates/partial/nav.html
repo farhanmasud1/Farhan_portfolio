@@ -1,0 +1,21 @@
+
+
+<nav>
+    <a href="/" class="logo"><span>{{name}}</span>.</a>
+    <ul class="nav-links">
+        <li><a href="/" class="{% if request.path == '/' %}active{% endif %}">Home</a></li>
+        <li><a href="{% url 'demo:about' %}" class="{% if request.path == '/about/' %}active{% endif %}">About</a></li>
+        <li><a href="{% url 'demo:projects' %}"
+                class="{% if request.resolver_match.url_name == 'projects' %}active{% endif %}">Projects</a></li>
+        <li><a href="{% url 'demo:contact' %}"
+                class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+        <i class="fas fa-moon theme-toggle"></i>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>

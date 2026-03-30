@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block 'main' %}
+{% block 'title' %}About{% endblock %}
+
+    <main class="container page-header">
+        <h2 class="section-title">
+            <span class="text-accent-light">ABOUT</span> <span class="text-accent">ME.</span>
+        </h2>
+        
+        <div class="about-grid">
+            <div class="about-text">
+                <p>Hello! {{name}}, a Python Developer with a deep love for building scalable backends and efficient APIs. My journey in tech is driven by a passion for clean architecture and performant systems.</p>
+                <p>I specialize in the Python ecosystem, specifically Django and FastAPI, while ensuring a seamless user experience using JavaScript and TailwindCSS on the frontend.</p>
+                
+                <div class="skills-container" style="margin-top: 2.5rem;">
+                    <h3 style="margin-bottom: 1.5rem; text-transform: uppercase;">Core Tech Stack</h3>
+                    <div class="skills-list" style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                        <span class="skill-tag"><i class="fab fa-python" style="color: #3776ab;"></i> Python</span>
+                        <span class="skill-tag"><i class="fas fa-leaf" style="color: #092e20;"></i> Django & DRF</span>
+                        <span class="skill-tag"><i class="fas fa-bolt" style="color: #05998b;"></i> FastAPI</span>
+                        <span class="skill-tag"><i class="fab fa-js-square" style="color: #f7df1e;"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fab fa-css3-alt" style="color: #38bdf8;"></i> TailwindCSS</span>
+                        <span class="skill-tag"><i class="fas fa-database" style="color: #336791;"></i> PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Developer desk setup">
+            </div>
+        </div>
+    </main>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}} | {% block 'title' %}Developer Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+   
+    {% include 'partial/nav.html' %}
+    
+     {% block 'main' %} {% endblock %}
+
+
+    <footer>
+        <p>&copy; {{copyright}} {{name}}. Designed for Classroom Demo.</p>
+    </footer>
+    
+    <script src="{% static 'assets/js/script.js' %}"></script>
+    </body>
+    
+    </html>
